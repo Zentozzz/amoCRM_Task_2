@@ -1,0 +1,70 @@
+.footer {
+  width: 100%;
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-bottom: 10px;
+  h4 {
+    color: #656566;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 20px;
+  }
+  p {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  .element {
+    .flex {
+      display: flex;
+      .leftTable {
+        margin-right: 52px;
+      }
+    }
+  }
+
+  .contacts {
+    text-align: right;
+    p {
+      margin-bottom: 20px;
+    }
+    .svgFlex {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      margin-bottom: 20px;
+      svg {
+        margin-left: 14px;
+      }
+    }
+  }
+}
+
+.politics {
+  padding: 0 150px;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-align: right;
+  margin-bottom: 20px;
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+  span {
+    p {
+      cursor: pointer;
+      font-family: "Montserrat", sans-serif;
+      text-decoration: underline;
+    }
+  }
+}

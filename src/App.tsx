@@ -1,11 +1,10 @@
-import React from "react";
-
-import "./App.css";
-
 import { Header } from "./components/header/header";
 import { Main } from "./components/main/main";
+import { Footer } from "./components/footer/footer";
 
 import { Background } from "./background/background";
+
+import "./App.css";
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
       <div className="App">
         <Header />
         <Main />
+        <Footer />
         <Background />
       </div>
     </>
