@@ -62,6 +62,13 @@ export function Main() {
             </p>
           </div>
         </div>
+        <div className={mainStyle.buttonFlex}>
+          <input
+            type="button"
+            value="Получить консультацию"
+            className={mainStyle.button}
+          />
+        </div>
       </div>
     </div>
   );

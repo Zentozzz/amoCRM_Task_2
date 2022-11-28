@@ -1,4 +1,6 @@
 export const bottomText: string;
+export const button: string;
+export const buttonFlex: string;
 export const element: string;
 export const grid: string;
 export const main: string;
