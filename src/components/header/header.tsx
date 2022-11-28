@@ -49,7 +49,7 @@ export function Header() {
           <p>Виджеты</p>
           <p>Интеграции</p>
           <p>Кейсы</p>
-          <p>Сертификаты</p>
+          <p className={headerStyle.del}>Сертификаты</p>
         </div>
       </div>
       <div className={headerStyle.contacts}>

@@ -7,8 +7,21 @@
   box-sizing: border-box;
   max-width: 100%;
   margin-bottom: 100px;
+  @media screen and (max-width: 1150px) {
+    padding: 0 40px;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    padding: 20px 16px;
+    background-color: #0e1014;
+    margin-bottom: 40px;
+  }
   .flex {
     display: flex;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      justify-content: space-between;
+    }
   }
   .logo {
     display: flex;
@@ -24,25 +37,70 @@
       font-family: "Montserrat", sans-serif;
       line-height: 12px;
     }
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
   }
   .menu {
     display: flex;
     margin-left: 20px;
+    @media screen and (max-width: 930px) {
+      margin-left: 0px;
+    }
+    @media screen and (max-width: 930px) {
+      width: 100%;
+      justify-content: space-between;
+    }
+    .del {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
     p {
       margin-left: 30px;
       font-weight: 500;
       cursor: pointer;
+      @media screen and (max-width: 860px) {
+        margin-left: 14px;
+      }
+      @media screen and (max-width: 768px) {
+        margin-left: 0;
+      }
+      @media screen and (max-width: 400px) {
+        font-size: 12px;
+      }
+      // @media screen and (max-width: 860px) {
+      //   margin-left: 15px;
+      // }
+      // @media screen and (max-width: 860px) {
+      //   margin-left: 10px;
+      // }
     }
   }
   .contacts {
     display: flex;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
     a {
       font-weight: 500;
+      @media screen and (max-width: 1330px) {
+        display: none;
+      }
     }
     .links {
       margin-left: 20px;
+      @media screen and (max-width: 930px) {
+        margin-left: 0px;
+      }
       svg {
         margin-left: 30px;
+        @media screen and (max-width: 930px) {
+          margin-left: 20px;
+        }
+        @media screen and (max-width: 860px) {
+          margin-left: 14px;
+        }
         cursor: pointer;
       }
     }

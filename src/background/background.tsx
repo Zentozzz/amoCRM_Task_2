@@ -9,6 +9,7 @@ export function Background() {
         <div className="redBall"></div>
         <div className="redLight"></div>
         <div className="redBall2"></div>
+        <div className="glass"></div>
       </div>
     </div>
   );

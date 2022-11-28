@@ -1,18 +1,42 @@
 .main {
   width: 100%;
   padding: 0 150px;
-  display: flex;
-  justify-content: space-between;
   box-sizing: border-box;
   max-width: 100%;
   margin-bottom: 145px;
+  @media screen and (max-width: 1150px) {
+    padding: 0 40px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0px 16px;
+    margin-bottom: 60px;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
   .tagline {
+    width: 100%;
     .tit {
+      @media screen and (max-width: 768px) {
+        margin-bottom: 45px;
+      }
       h1 {
         font-weight: 400;
         color: #e4e5ea;
         font-size: 3em;
         font-family: "Inter", sans-serif;
+        @media screen and (max-width: 400px) {
+          font-size: 36px;
+        }
       }
       .spotlight {
         font-weight: 900;
@@ -22,6 +46,9 @@
         -webkit-text-fill-color: transparent;
         background-clip: text;
         margin-bottom: 30px;
+        @media screen and (max-width: 768px) {
+          font-size: 36px;
+        }
       }
     }
     .secondText {
@@ -31,13 +58,16 @@
     }
   }
   .present {
-    width: max-content;
+    width: 100%;
     .text {
       margin-bottom: 40px;
       .upText {
         display: flex;
         justify-content: right;
-        align-items: center;
+        @media screen and (max-width: 768px) {
+          justify-content: left;
+          align-items: center;
+        }
         h3 {
           font-family: "Inter", sans-serif;
           color: #e4e5ea;
@@ -60,6 +90,10 @@
         display: flex;
         justify-content: right;
         align-items: center;
+        @media screen and (max-width: 768px) {
+          justify-content: left;
+          align-items: center;
+        }
         h3 {
           font-family: "Inter", sans-serif;
           color: #e4e5ea;
@@ -88,6 +122,27 @@
       margin-bottom: 60px;
       .element {
         text-align: right;
+        @media screen and (max-width: 768px) {
+          text-align: left;
+        }
+        @media screen and (max-width: 768px) {
+          .flexStill {
+            display: flex;
+            align-items: center;
+            .still {
+              height: 1px;
+              width: 10px;
+              margin-right: 5px;
+              background: linear-gradient(
+                90deg,
+                rgba(252, 176, 69, 1) 0%,
+                rgba(253, 29, 29, 1) 100%
+              );
+              margin-bottom: 4px;
+            }
+          }
+        }
+
         h3 {
           color: #e4e5ea;
           font-family: "Inter", sans-serif;
@@ -95,11 +150,19 @@
           font-size: 18px;
           margin-bottom: 4px;
           text-transform: uppercase;
+          @media screen and (max-width: 400px) {
+            font-size: 13px;
+            font-weight: 400;
+            font-family: "Montserrat", sans-serif;
+          }
         }
         p {
           font-family: "Montserrat", sans-serif;
           font-size: 16px;
           font-weight: 400;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
       }
     }
@@ -107,6 +170,9 @@
       width: 100%;
       display: flex;
       justify-content: right;
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
       .button {
         background-color: #4077f3;
         font-weight: 500;
