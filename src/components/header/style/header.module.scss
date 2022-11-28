@@ -1,3 +1,50 @@
 .header {
   width: 100%;
+  padding: 0 150px;
+  margin-top: 46px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-bottom: 100px;
+  .flex {
+    display: flex;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+    svg {
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 10px;
+      font-weight: 300;
+      font-style: light;
+      font-family: "Montserrat", sans-serif;
+      line-height: 12px;
+    }
+  }
+  .menu {
+    display: flex;
+    margin-left: 20px;
+    p {
+      margin-left: 30px;
+      font-weight: 500;
+      cursor: pointer;
+    }
+  }
+  .contacts {
+    display: flex;
+    a {
+      font-weight: 500;
+    }
+    .links {
+      margin-left: 20px;
+      svg {
+        margin-left: 30px;
+        cursor: pointer;
+      }
+    }
+  }
 }

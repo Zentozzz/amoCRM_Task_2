@@ -1,0 +1,105 @@
+.main {
+  width: 100%;
+  padding: 0 150px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 100%;
+  .tagline {
+    .tit {
+      h1 {
+        font-weight: 400;
+        color: #e4e5ea;
+        font-size: 3em;
+        font-family: "Inter", sans-serif;
+      }
+      .spotlight {
+        font-weight: 900;
+        background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+          #e4e5ea;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
+      }
+    }
+    .secondText {
+      font-family: "Montserrat", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+  .present {
+    width: max-content;
+    .text {
+      margin-bottom: 40px;
+      .upText {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        h3 {
+          font-family: "Inter", sans-serif;
+          color: #e4e5ea;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        p {
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+            #e4e5ea;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-transform: uppercase;
+        }
+      }
+      .bottomText {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        h3 {
+          font-family: "Inter", sans-serif;
+          color: #e4e5ea;
+          font-size: 18px;
+          font-weight: 500;
+        }
+        p {
+          font-family: "Inter", sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+          background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%),
+            #e4e5ea;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 30px;
+      grid-row-gap: 30px;
+      .element {
+        text-align: right;
+        h3 {
+          color: #e4e5ea;
+          font-family: "Inter", sans-serif;
+          font-weight: 500;
+          font-size: 18px;
+          margin-bottom: 4px;
+          text-transform: uppercase;
+        }
+        p {
+          font-family: "Montserrat", sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}

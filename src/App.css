@@ -1,5 +1,5 @@
-.app {
+.App {
+  max-width: 100%;
   width: 1440px;
   margin: 0 auto;
-  padding: 0 150px;
 }
